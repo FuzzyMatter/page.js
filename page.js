@@ -166,7 +166,7 @@
     }
     if (true === options.hashbang) {
       hashbang = true;
-      window.addEventListener('hashchange', onhashchange, false);
+      //window.addEventListener('hashchange', onhashchange, false);
     }
     if (!dispatch) return;
 
@@ -193,7 +193,7 @@
     running = false;
     document.removeEventListener(clickEvent, onclick, false);
     window.removeEventListener('popstate', onpopstate, false);
-    window.removeEventListener('hashchange', onhashchange, false);
+    //window.removeEventListener('hashchange', onhashchange, false);
   };
 
   /**
